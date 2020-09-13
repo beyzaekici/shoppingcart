@@ -1,0 +1,10 @@
+postgres:
+  image: postgres:9.6
+  ports:
+    - "5432:5432"
+  volumes:
+    - data:/var/lib/postgresql/data
+  environment:
+    POSTGRES_PASSWORD: 123
+    POSTGRES_USER: beyza
+    POSTGRES_DB: trendyol
